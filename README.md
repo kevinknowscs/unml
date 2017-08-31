@@ -78,6 +78,10 @@ Contents the encompasses all of the technologies they use on the project.
 4. The user peruses the document at their leisure. With each session she discovers some wonderful nuances about the technology
 she is using.
 5. The user conducts a keywork search and finds all relevant documents in all of her knowledge bases.
+6. After a year or so, the user moves onto a new project. The new project uses Angular instead of React as the primary web UI
+framework. Thus she no longer cares about React and doesn't want the React documentation to clutter up her workspace. She simply
+removes React from her workspace, and adds Angular. In this way, her workspace always contains everything she cares about, and
+nothing she doesn't care about.
 
 Current Examples of Similar Technologies
 ----------------------------------------
