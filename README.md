@@ -44,7 +44,8 @@ If each page of the knowledge base provides the navigatable Table of Contents, e
 the Don't Repeat Yourself (DRY) principle, a well-recognized software engineering principle. Furthermore, since the Table of Contents
 is mixed together with the regular content of the page, and there is no existing standard, it is impossible for a third-party 
 program to query the content to discover the Table of Contents without human intervention. By creating a standard semantic language
-for authoring Table of Contents, the author of the knowledge base can separate navigation and content.
+for authoring Table of Contents, the author of the knowledge base can separate navigation and content, making the Table of Contents
+queryable and discoverable.
 
 This leads us to the second problem. We want to create a way for the Table of Contents of multiple knowledge bases be merged together
 and presented with a unified Table of Contents by a hosting platform that is independent of any of the knowledge bases. Thus, a
@@ -52,4 +53,35 @@ knowledge base consumer that wishes to consume content from multiple knowledge b
 be presented with a coherent, unified Table of Contents that spans all knowledge bases of interest, presumably with a consistent
 look-and-feel.
 
+We envision a UNML-compliant knowledge base hosting platform that can host multiple knowledge bases in a single location. As the
+UNML standard is intended to eventually be an open standard, any organization wishing to create such a platform could do so without
+any restrictions or licensing fees. Such a platform could be open source or commercial, cloud-based or locally installed, web-based
+or written using a GUI framework, etc. We would hope that there would be many multiple and complementary implementations of the
+UNML standard.
 
+Likewise, we would hope that eventually UNML would be popular enough that organizations that publish knowledge bases would do so in a
+UNML-compliant way. In particular, we would hope that producers of open source programming frameworks, libraries, tools, and 
+components would publish their documentation in a UNML-compliant way.
+
+Sample Workflow
+---------------
+1. The user creates an account on their preferred UNML-compliant knowledge base hosting platform. Their workspace appears empty at
+first, because they have not yet added any knowledge bases. For this example, we will assume the user is a programmer working on
+a software project that uses approximately a dozen open source libraries. This is very typical of a real-world software project.
+2. The user is using React as the primary framework for their project. They want to add the React documentation to their workspace.
+They click the "Add Knowledge Base ..." command and are prompted for the URL of the UNML for the knowledge base. They type
+"http://reactjs.com/react.unml" and hit enter. Immediately afterwards, all of the React documentation appears in the navigation 
+section of their workspace.
+3. The user likewise enters the UNML addresses for the other technologies they use in their project: TypeScript, WebPack, NodeJS,
+npm, IntelliJ, Griddle, .NET Core 2.0, LazyJS, etc. The navigation section of their workspace now contains a unified Table of 
+Contents the encompasses all of the technologies they use on the project.
+4. The user peruses the document at their leisure. With each session she discovers some wonderful nuances about the technology
+she is using.
+5. The user conducts a keywork search and finds all relevant documents in all of her knowledge bases.
+
+Current Examples of Similar Technologies
+----------------------------------------
+TODO
+
+* Dash
+* MSDN
