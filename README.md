@@ -33,13 +33,23 @@ base. It is ordered and hierarchical.
 
 Problem Statement
 -----------------
-We address two specific problems with the current state of web document authorship.
+We address two specific problems with the current state of knowledge base authorship.
 
-First, the author knows of no existing standard for semantically authoring the Table of Contents of a knowledge base. Every web site
-must provide some means of allowing the user to discover and navigate through pages of the site. This can be done in numerous ways,
-either through static content, or dynamically generated content done in either the backend or frontend (typically using JavaScript).
+First, the author knows of no existing standard for semantically authoring the Table of Contents of a knowledge base. Every knowledge
+base (e.g., a web site) must provide some means of allowing the user to discover and navigate through pages of the site. This can be 
+done in numerous ways, either through static content, or dynamically generated content done in either the backend or frontend 
+(typically using JavaScript).
 
-If each page of the knowledge base provided the navigatable Table of Contents, either statically or dynamically, then it violated
-the Don't Repeat Yourself (DRY) principle, a well-recognized software engineering principle.
+If each page of the knowledge base provides the navigatable Table of Contents, either statically or dynamically, then it violates
+the Don't Repeat Yourself (DRY) principle, a well-recognized software engineering principle. Furthermore, since the Table of Contents
+is mixed together with the regular content of the page, and there is no existing standard, it is impossible for a third-party 
+program to query the content to discover the Table of Contents without human intervention. By creating a standard semantic language
+for authoring Table of Contents, the author of the knowledge base can separate navigation and content.
+
+This leads us to the second problem. We want to create a way for the Table of Contents of multiple knowledge bases be merged together
+and presented with a unified Table of Contents by a hosting platform that is independent of any of the knowledge bases. Thus, a
+knowledge base consumer that wishes to consume content from multiple knowledge bases can have a single place they can visit, and
+be presented with a coherent, unified Table of Contents that spans all knowledge bases of interest, presumably with a consistent
+look-and-feel.
 
 
