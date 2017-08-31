@@ -85,3 +85,11 @@ TODO
 
 * Dash
 * MSDN
+
+UNML Adapters
+-------------
+As with any new technology, it may take some time for the standard to become widely adopted. Since we need both UNML producers
+and consumers to create a viable, robust community, there is a chicken-and-egg adoption problem.
+
+To solve this problem, we envision that motivated organizations that wish to spur the adoption of UNML could write adapters that
+would transform non-UNML-compliant content into UNML-compliant content.
